@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: StarCraft;
+  background: #333;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+h3,
+p {
+  font-family: EuroStyle;
+}
+
+:root {
+  --container-normal: 1100px;
+  --container-wide: 1400px;
+  --container-ultra-wide: 1600px;
+  --container-small: 900px;
+  --radar-color: #8bf688;
+  --ability-color: #0c7909;
+  --terran-blue: rgba(0, 66, 255, 0.25);
+  --border-color: #1ca7ea;
+}
+
+.header {
+  width: 100%;
+}
+
+.header-flex {
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.header a {
+  font-size: 1.1rem;
+}
+
+.nav-flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-flex button {
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+}
+
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--border-color);
+  background: rgba(0, 66, 255, 0.25);
+}
+
+.hero h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  max-width: var(--container-small);
+  font-family: EuroStyle;
+  background: transparent;
+}
+
+.featured {
+  padding: 3rem 0 4rem;
+}
+
+.featured-flex {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--container-ultra-wide);
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.featured-item {
+  padding: 1rem;
+  width: 80vw;
+  margin: 0 auto;
+  background: rgba(0, 66, 255, 0.25);
+  border: 5px solid var(--border-color);
+}
+
+.featured h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  background: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.featured p {
+  font-weight: bold;
+  background: transparent;
+}
+
+.featured img {
+  width: 100%;
+  height: 300px;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 40px;
+}
+
+.ability-text {
+  font-family: EuroStyle;
+  font-weight: bold;
+  color: var(--ability-color);
+  background: transparent;
+}
+
+.footer {
+  padding: 3rem 0 4rem;
+  border-top: 5px solid var(--border-color);
+}
+
+.footer h4 {
+  margin-bottom: 0.4rem;
+}
+
+.logo-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  flex: 1 1 0%;
+}
+
+.footer-unit-list li {
+  font-family: EuroStyle;
+}
+
+.biological {
+  padding: 3rem 0 4rem;
+  border-top: 5px solid var(--border-color);
+}
+
+.biological-flex {
+  display: flex;
+  max-width: var(--container-ultra-wide);
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.biological-item {
+  background: var(--terran-blue);
+  padding: 1rem;
+  border: 5px solid var(--border-color);
+  width: 100%;
+}
+
+.biological h2,
+.biological h3,
+.biological p {
+  background: transparent;
+}
+
+.biological img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: StarCraft;
+  src: url(public/fonts/starcraft_normal.ttf);
+}
+
+@font-face {
+  font-family: EuroStyle;
+  src: url(public/fonts/eurostyle_regular.ttf);
+}
+
+@media (min-width: 40rem) {
+}
+
+@media (min-width: 48rem) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .header-flex {
+    flex-direction: row;
+  }
+
+  .featured-flex {
+    flex-direction: row;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .featured-item {
+    width: calc(25% - 20px);
+  }
+}
+
+@media (min-width: 64rem) {
+}
+
+@media (min-width: 80rem) {
+}
+
+@media (min-width: 96rem) {
+}
