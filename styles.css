@@ -169,16 +169,15 @@ p {
   max-width: var(--container-ultra-wide);
   margin: 0 auto;
   gap: 1rem;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .biological-item {
   background: var(--terran-blue);
   padding: 1rem;
   border: 5px solid var(--border-color);
-  width: 100%;
-  max-width: calc(25% - 100px);
+  width: calc(25% - 100px);
 }
 
 .biological h2,
@@ -188,6 +187,37 @@ p {
 }
 
 .biological img {
+  width: 100%;
+}
+
+.mechanical {
+  padding: 3rem 0 4rem;
+  border-top: 5px solid var(--border-color);
+}
+
+.mechanical-flex {
+  display: flex;
+  max-width: var(--container-ultra-wide);
+  margin: 0 auto;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mechanical-item {
+  background: var(--terran-blue);
+  padding: 1rem;
+  border: 5px solid var(--border-color);
+  width: calc(25% - 100px);
+}
+
+.mechanical h2,
+.mechanical h3,
+.mechanical p {
+  background: transparent;
+}
+
+.mechanical img {
   width: 100%;
 }
 
