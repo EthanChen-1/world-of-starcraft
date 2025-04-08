@@ -169,6 +169,8 @@ p {
   max-width: var(--container-ultra-wide);
   margin: 0 auto;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .biological-item {
@@ -176,6 +178,7 @@ p {
   padding: 1rem;
   border: 5px solid var(--border-color);
   width: 100%;
+  max-width: calc(25% - 100px);
 }
 
 .biological h2,
